@@ -45,7 +45,7 @@ Once the curve from the lane modules is in the Main module, I send the curve to 
 ![](/Images/LaneDetectionModule.PNG)
 
 
-#Machine Learning
+# Machine Learning
 
 I divided the training of the data into different steps. 
 # Requiremnets
@@ -62,7 +62,7 @@ Next I visualize the data and balance them.
 ![](/Images/DataTrainingSteps.PNG)
 
 
-#Result
+# Result
 
 The final result of this project, is an autonomous car, that can detect the road lines using image processing and machine learning to detect the center of the road and make sure to not drift off it, using ultrasonic sensors detect object on the road that prevents the car from further driving to avoid collision, a car that can detect traffic signs and based on the traffic sign read what it states and react based on logic accordingly with little to no error. 
 The motors connected to the h-bridge works perfectly when they receive enough power, which in this case is 12V.
@@ -72,13 +72,13 @@ The car was detecting the road and the road signs from the camera images. And th
 ![](/Images/TheSelfDrivingCar.PNG)
 
 
-#Built With
+# Built With
 
 - Python Programming Language
 - Raspberry Pi Module 4
 
 
-#To Do
+# To Do
 I am planning for the car further development, as I would like to implement a Radar on the car to see how ill that affect the performance.
 
 
