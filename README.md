@@ -29,7 +29,7 @@ Throughout the whole process of completing this project, I had one aim in my min
 The idea of Modularity is creating multiple files of code, and linking them together to complete a complete project, where I will have a main file, and that file would be connected to multiple modules such as motor, camera, keyboard, joystick and detection algorithms like face and lane, each of these modules will have their own code that can run on its own, and if needed can be called by the main script, this way, modules will only input and output meaningful information making the process modular and easy to manage, for example if I wanted to change the motor driver, I can simply just replace the motor driver module rather than changing the whole code.
 Having a modular code will allow me to use the same modules for other projects as well.
 
-![](/Images/Modularity.PNG)
+![](/Images/Modularity.png)
 
 
 # Lane Detection
@@ -42,13 +42,12 @@ In this case, it will be required by the Lane module, so I will send the image, 
 There is also a utilities file, that is linked only to the lane module, and it will contain supporting functions, so the main lane module is not very clustered with codes.
 Once the curve from the lane modules is in the Main module, I send the curve to the motor module, that will turn the motors based on the speed and turn provided by the lane module.
 
-![](/Images/LaneDetectionModule.PNG)
+![](/Images/LaneDetectionModule.png)
 
 
 # Machine Learning
 
 I divided the training of the data into different steps. 
-# Requiremnets
  1. I import the information from the data collection module, which are the image and the steering angle, using Panda’s framework I balance the data. 
 Next I visualize the data and balance them.
  2. I prepare the data for processing, which means I bring the data out of the panda format and put it into a list format for the ease of use later on.
@@ -59,7 +58,7 @@ Next I visualize the data and balance them.
  7. Training is done, I save the model, into a model.h5 file. 
  8. I plot the result using matplotlib.
 
-![](/Images/DataTrainingSteps.PNG)
+![](/Images/DataTrainingSteps.png)
 
 
 # Result
@@ -69,7 +68,7 @@ The motors connected to the h-bridge works perfectly when they receive enough po
 The Raspberry Pi successfully communicates with the H-Bridge, Camera, Ultrasonic Sensor and the Servo Motors, when supplied with 5V power.
 The car was detecting the road and the road signs from the camera images. And the trained data was successfully able to predict the correct speed and turn angle for the car to drive on the road.
 
-![](/Images/TheSelfDrivingCar.PNG)
+![](/Images/TheSelfDrivingCar.jpg)
 
 
 # Built With
