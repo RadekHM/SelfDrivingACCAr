@@ -3,7 +3,7 @@
 Self Driving car, A raspberry Pi based RC car is a self-driving, or autonomous vehicle that has the ability to follow a logical course of action to achieve set goals by the users when it comes to driving to a designated location.
 
 
-# Requiremnets
+## Requiremnets
 
  1. Raspberry Pi Model 4 or later
  2. L298n Motor Driver with motors and wheels attached to it
@@ -12,7 +12,7 @@ Self Driving car, A raspberry Pi based RC car is a self-driving, or autonomous v
  5. Servo Motors
  
 
-# Libraries Used
+## Libraries Used
 
  1. <b>RPi.GPIO</b>: This package provides the class to control the GPIO pins on a Raspberry Pi, used in this project to control the H-Bridge that controls the motors, the camera, the ultrasonic sensor as well as the servo motors that controls the camera and ultrasonic sensor.
  2. <b>PyGame</b>: This a python library that is mainly used for creating and developing game using python, used in this project to detect key presses from a keyboard for manual control of the car.
@@ -24,7 +24,7 @@ Self Driving car, A raspberry Pi based RC car is a self-driving, or autonomous v
  8. <b>Imgaug</b>: Imgaug is python library used for image augmentation and used in the project to train the AI.
 
 
-# Design
+## Design
 Throughout the whole process of completing this project, I had one aim in my mind, modularity, not only in the hardware, but in the software as well, which means I will be able to add and remove devices and sensors very easily without having to revamp my code completely.
 The idea of Modularity is creating multiple files of code, and linking them together to complete a complete project, where I will have a main file, and that file would be connected to multiple modules such as motor, camera, keyboard, joystick and detection algorithms like face and lane, each of these modules will have their own code that can run on its own, and if needed can be called by the main script, this way, modules will only input and output meaningful information making the process modular and easy to manage, for example if I wanted to change the motor driver, I can simply just replace the motor driver module rather than changing the whole code.
 Having a modular code will allow me to use the same modules for other projects as well.
@@ -32,7 +32,7 @@ Having a modular code will allow me to use the same modules for other projects a
 ![](/Images/Modularity.png)
 
 
-# Lane Detection
+## Lane Detection
 
 For this project, I created a module for lane detection using machine learning, where the car will detect the road lanes, and will drive between the road lanes autonomously without human intervention.
 The modules I will be using are the motor module and the webcam and ultrasonic sensor modules.
@@ -45,7 +45,7 @@ Once the curve from the lane modules is in the Main module, I send the curve to 
 ![](/Images/LaneDetectionModule.png)
 
 
-# Machine Learning
+## Machine Learning
 
 I divided the training of the data into different steps. 
  1. I import the information from the data collection module, which are the image and the steering angle, using Panda’s framework I balance the data. 
@@ -61,7 +61,7 @@ Next I visualize the data and balance them.
 ![](/Images/DataTrainingSteps.png)
 
 
-# Result
+## Result
 
 The final result of this project, is an autonomous car, that can detect the road lines using image processing and machine learning to detect the center of the road and make sure to not drift off it, using ultrasonic sensors detect object on the road that prevents the car from further driving to avoid collision, a car that can detect traffic signs and based on the traffic sign read what it states and react based on logic accordingly with little to no error. 
 The motors connected to the h-bridge works perfectly when they receive enough power, which in this case is 12V.
@@ -71,17 +71,17 @@ The car was detecting the road and the road signs from the camera images. And th
 ![](/Images/TheSelfDrivingCar.jpg)
 
 
-# Built With
+## Built With
 
 - Python Programming Language
 - Raspberry Pi Module 4
 
 
-# To Do
+## To Do
 I am planning for the car further development, as I would like to implement a Radar on the car to see how ill that affect the performance.
 
 
-# Authors
+## Authors
 
 - Radvan Khammud
 
